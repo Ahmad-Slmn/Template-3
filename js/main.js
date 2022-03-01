@@ -90,7 +90,7 @@ $(function () {
     })
 
     // Smoothly Scroll To Elment
-    $("nav ul li a").click(function (e) {
+    $("nav ul li a, .buttons a").click(function (e) {
 
         e.preventDefault();
         

@@ -104,7 +104,7 @@ html {
 :root {
 
     --color1: #f7600e;
-    --trans: .4s
+    --trans: .4s ease-in-out
 }
 
 .fa-bars {
@@ -328,7 +328,8 @@ html {
 .our-work .show-more:hover {
     background-color: var(--color1);
     border: 1px solid var(--color1);
-    color: #fff
+    color: #fff;
+    cursor: pointer
 }
 
 .our-work .items-box {
@@ -342,7 +343,8 @@ html {
 }
 
 .our-work .items-box .item {
-    position: relative
+    position: relative;
+    overflow:hidden
 }
 
 .our-work .items-box .item:hover .over {
@@ -382,7 +384,8 @@ html {
     transition: var(--trans);
     position: relative;
     bottom: 51px;
-    left: 0
+    left: 0;
+    cursor: pointer
 }
 
 .our-work .items-box .item .over button:hover {
@@ -467,8 +470,11 @@ html {
 }
 
 
+.our-team .the-team .person{transition: var(--trans)}
+
+
 .our-team .the-team .person:hover {
-    color: #555;
+    color: #555
 }
 
 .our-team .the-team .person:hover .fa-facebook-f {
@@ -485,11 +491,7 @@ html {
 
 .our-team .the-team .person:hover img {
     filter: none;
-    filter: grayscale(0);
-}
-
-.our-team .the-team .person img:hover {
-    transform: translateZ(30px);
+    filter: grayscale(0)
 }
 
 .our-team .the-team .person img {
@@ -498,10 +500,13 @@ html {
     filter: grayscale(1);
     box-shadow: 1px 1px 10px black;
     transition: 0.9s all ease-in-out;
+    max-height: 240px;
+    border-radius: 10px
 }
 
 .our-team .the-team .person p {
     font-size: 15px;
+    line-height: 1.5
 }
 
 .our-team .the-team .social-icons i {
@@ -511,7 +516,9 @@ html {
     line-height: 30px;
     color: #fff;
     border-radius: 50%;
-    margin: 10px 0
+    margin: 10px 0;
+    transition: var(--trans);
+    cursor: pointer
 }
 
 /* End My Our-Team*/
@@ -608,16 +615,14 @@ html {
     line-height: 30px;
     color: #fff;
     border-radius: 50%;
+    background-color: #494a4aa8;
+    cursor: pointer;
+    transition: all var(--trans);
+    margin: 0 5px
 }
 
 .our-team .the-team .person:hover {
     color: #555;
-}
-
-.contact form .info .form-icons i {
-    background-color: #494a4aa8;
-    cursor: pointer;
-    transition: all var(--trans);
 }
 
 .contact form .info .form-icons .fa-facebook-f:hover {
@@ -712,7 +717,8 @@ html {
     }
     
     p{font-size: 10px !important}
-
+    
+    .our-work .items-box .item .over p{font-size: 20px !important; line-height: 1.7}
 
 }
 

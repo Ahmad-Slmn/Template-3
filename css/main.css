@@ -1,0 +1,860 @@
+/* Start My Framework */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    outline: none;
+    list-style: none;
+    text-decoration: none
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    position: relative;
+}
+
+img{object-fit: cover}
+
+.table {
+    height: 100%;
+    display: table;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.main-color {
+    color: #f7600e;
+}
+
+.main-background {
+    background-color: #f7600e;
+}
+
+.overlay {
+    background: rgba(49, 55, 61, 0.9);
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #f7600e87;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #f7600e;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+}
+
+.fa-arrow-up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 15px;
+    background-color: var(--color1);
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 15px;
+    display: none
+}
+
+:focus::placeholder {
+    opacity: 0;
+    transition: var(--trans);
+}
+
+:root {
+
+    --color1: #f7600e;
+    --trans: .4s
+}
+
+.fa-bars {
+    display: none !important
+}
+
+/* End My Framework */
+/* Start My Header */
+.header {
+    background-image: url(../images/header_stock.png);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-attachment: fixed
+}
+
+.header .navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+
+.header .navbar .logo {
+    font-size: 24px;
+    letter-spacing: 2px;
+    display: flex
+}
+
+.header .navbar ul {
+    display: flex
+}
+
+.header .navbar ul li a {
+
+    color: #fff;
+    padding: 0 10px;
+    display: block;
+    transition: var(--trans);
+    font-weight: bold
+}
+
+.header .navbar ul li a:hover {
+    color: var(--color1);
+    transform: translateX(6px)
+}
+
+.header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.header .intro h1 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.header .intro p {
+    margin: 5px 0 40px;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #e2e2e2;
+}
+
+.header .buttons button {
+    background: transparent;
+    padding: 10px;
+    width: 180px;
+    font-size: 15px;
+    border: 1px solid #909090;
+    margin: 0 8px;
+    border-radius: 10px;
+    transition: var(--trans)
+}
+
+.header .buttons button:hover {
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+}
+
+.header .buttons button a {
+    color: #fff
+}
+
+
+.header .fa-chevron-down {
+    border: 2px solid #7b7b7b;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 39px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: var(--trans);
+    position: relative;
+    top: 40px
+}
+
+.header .fa-chevron-down:hover {
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+}
+
+/* End My Header */
+/* Start My Features */
+.features {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.features .container {
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+
+.features .box i {
+    color: #f7600e;
+    border: 1px solid #ccc;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    line-height: 120px;
+    transition: var(--trans);
+    margin-bottom: 10px
+}
+
+.features .box i:hover {
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+    color: #fff
+}
+
+.features .box h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #505050;
+}
+
+.features .box p {
+    line-height: 1.8;
+    color: #888;
+}
+
+/* End My Features */
+/* Start My Subscribe */
+.subscribe {
+    background-image: url(../images/subscribe.png);
+    background-size: cover;
+    background-position: center
+}
+
+.subscribe form {
+    padding: 100px 0;
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.subscribe form input[type="email"] {
+    padding: 0 10px;
+    width: 320px;
+    font-size: 14px;
+    border-radius: 10px;
+    position: relative;
+    top: 2px;
+    border: none;
+    height: 37px;
+    line-height: 37px;
+}
+
+.subscribe form input[type="email"]::placeholder {
+    color: rgb(37 48 58);
+    font-weight: bold
+}
+
+.subscribe form input[type="submit"] {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background-color: var(--color1);
+    color: #fff;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* End My Subscribe */
+/* Start My our-work */
+.our-work {
+    padding: 50px 0;
+}
+
+.our-work h2 {
+    font-weight: 500;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-work h2 ~ p {
+    line-height: 2;
+    margin: 10px 0 40px;
+}
+
+.our-work .show-more {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #555;
+    transition: var(--trans)
+}
+
+.our-work .show-more:hover {
+    background-color: var(--color1);
+    border: 1px solid var(--color1);
+    color: #fff
+}
+
+.our-work .items-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px
+}
+
+.our-work .items-box .item img {
+    width: 100%
+}
+
+.our-work .items-box .item {
+    position: relative
+}
+
+.our-work .items-box .item:hover .over {
+    display: block;
+}
+
+.our-work .items-box .item .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(247, 96, 14, 0.9);
+    color: #fff;
+    transition: var(--trans);
+    display: none;
+}
+
+.our-work .items-box .item .over h4 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 2
+}
+
+.our-work .items-box .item .over p {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    line-height: 2
+}
+
+.our-work .items-box .item .over button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: var(--trans);
+    position: relative;
+    bottom: 51px;
+    left: 0
+}
+
+.our-work .items-box .item .over button:hover {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #f7600e
+}
+
+/* End My our-work */
+/* Start My Testim*/
+.testim {
+    background-image: url("../images/img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative
+}
+
+.testim .client {
+    padding: 50px 0;
+    color: #fff;
+    font-size: 20px
+}
+
+.testim .client span {
+    color: var(--color1)
+}
+
+.testim .client img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 3px;
+    max-width: 150px
+}
+
+.testim .client p{margin: 10px 0; line-height: 1.5; font-size: 15px}
+
+.testim .fa-chevron-right,
+.testim .fa-chevron-left {
+    position: absolute;
+    top: 62%;
+    color: #999;
+    cursor: pointer;
+}
+
+.testim .fa-chevron-right:hover,
+.testim .fa-chevron-left:hover {
+    color: #f7600e;
+}
+
+.testim .fa-chevron-right {
+    right: 20px;
+}
+
+.testim .fa-chevron-left {
+    left: 20px;
+}
+
+/* End My Testim*/
+/* Start My Our-Team*/
+.our-team {
+    padding: 50px 0;
+}
+
+.our-team .the-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px
+}
+
+.our-team h2 {
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.our-team p {
+    margin: 10px 0 40px;
+    line-height: 1.4;
+    color: #666;
+    font-size: 18px
+}
+
+
+.our-team .the-team .person:hover {
+    color: #555;
+}
+
+.our-team .the-team .person:hover .fa-facebook-f {
+    background-color: #3b5998;
+}
+
+.our-team .the-team .person:hover .fa-twitter {
+    background-color: #55acee;
+}
+
+.our-team .the-team .person:hover .fa-google-plus-g {
+    background-color: #dd4b39;
+}
+
+.our-team .the-team .person:hover img {
+    filter: none;
+    filter: grayscale(0);
+}
+
+.our-team .the-team .person img:hover {
+    transform: translateZ(30px);
+}
+
+.our-team .the-team .person img {
+    width: 100%;
+    filter: gray;
+    filter: grayscale(1);
+    box-shadow: 1px 1px 10px black;
+    transition: 0.9s all ease-in-out;
+}
+
+.our-team .the-team .person p {
+    font-size: 15px;
+}
+
+.our-team .the-team .social-icons i {
+    background-color: #9da1a5;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+    margin: 10px 0
+}
+
+/* End My Our-Team*/
+/* Start My Contact*/
+.contact {
+    background-image: url(../images/city.png);
+    background-size: cover;
+    background-position: center
+}
+
+.contact .overlay {
+    padding: 50px 0;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 35px;
+}
+
+.contact form {
+    width: 700px;
+    margin: 50px auto
+}
+
+.contact form > div {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px
+}
+
+.contact form input[type="password"],
+.contact form input[type="email"] {
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+    color: #fff;
+    font-weight: bolder
+}
+
+
+
+.contact form textarea {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    height: 140px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    resize: none;
+}
+
+#count {
+    display: flex;
+    justify-content: center
+}
+
+.contact form .info input[type="submit"] {
+
+    padding: 10px;
+    width: 200px;
+    border: none;
+    background-color: #f7600e;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.contact form .info button:on-click {
+    background: red;
+}
+
+.contact form .info .form-icons{display: flex; justify-content: flex-end}
+
+
+.contact form .info .form-icons i {
+    background-color: #9da1a5;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.our-team .the-team .person:hover {
+    color: #555;
+}
+
+.contact form .info .form-icons i {
+    background-color: #494a4aa8;
+    cursor: pointer;
+    transition: all var(--trans);
+}
+
+.contact form .info .form-icons .fa-facebook-f:hover {
+    background-color: #3b5998;
+    border: 1px solid #3b5998;
+}
+
+.contact form .info .form-icons .fa-twitter:hover {
+    background-color: #55acee;
+    border: 1px solid #55acee;
+}
+
+.contact form .info .form-icons .fa-google-plus-g:hover {
+    background-color: #dd4b39;
+    border: 1px solid #dd4b39;
+}
+
+.contact form .info #span {
+    color: yellow;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: 20px;
+    top: 58px;
+    opacity: 0.7;
+    font-style: italic;
+    transition: all 1s;
+    animation: Mytreck 0.4s linear 100;
+}
+
+@keyframes Mytreck {
+
+    0%,
+    100% {
+        transform: translateZ(0);
+    }
+
+    50% {
+        transform: translateZ(200px);
+    }
+}
+
+/* End My Contact*/
+/* Start My Footer */
+.footer {
+    background-color: #3b434c;
+    color: #fff;
+    padding: 30px 0;
+    overflow: hidden
+}
+
+.footer p:first-of-type {
+
+    float: left
+}
+
+
+.footer p:last-of-type {
+
+    float: right
+}
+
+
+.footer .copyright {}
+
+.footer .design {}
+
+/* End My Footer */
+
+/*# sourceMappingURL=Tanatos.css.map */
+
+@media(max-width:450px) {
+
+    .contact form > div,
+    .subscribe form {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .subscribe form input {
+        width: 100% !important;
+        margin: 10px 0 !important
+    }
+
+    .contact form .info input[type="submit"] {
+        width: 100%
+    }
+    
+    .contact form .info .form-icons{justify-content: center}
+
+    #count {
+        margin-top: 10px
+    }
+    
+    p{font-size: 10px !important}
+
+
+}
+
+@media(max-width:767px) {
+
+    .container {
+        width: 100%
+    }
+
+    .header .navbar .links {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        display: inline-block;
+        width: 100%;
+        padding: 80px 7% 0;
+        max-height: 80px;
+        overflow: hidden;
+        transition: var(--trans);
+        background: var(--color1)
+    }
+
+    .header .navbar .links ul {
+        flex-direction: column;
+        text-align: right
+    }
+
+    .header .navbar .links ul li a {
+        padding: 10px 0;
+        font-size: 20px;
+        color: #fff
+    }
+
+    .header .navbar .links ul li a:hover {
+        color: rgb(37 48 58)
+    }
+
+    .header .navbar .logo {
+        position: fixed;
+        top: 3%;
+        left: 1%;
+        z-index: 2;
+        color: #fff
+    }
+
+    .header .navbar .logo span {
+        color: rgb(37 48 58)
+    }
+
+    .fa-bars {
+
+        display: block !important;
+        z-index: 2;
+        position: fixed;
+        top: 5%;
+        right: 1%;
+        color: #fff;
+        font-size: 25px;
+        cursor: pointer
+    }
+
+    .hidemenu {
+        max-height: 375px !important
+    }
+
+
+    .header .intro h1 {
+        font-size: 20px
+    }
+
+    .header .intro p {
+        font-size: 15px
+    }
+
+    .header .buttons button {
+        margin: 10px
+    }
+
+    .footer p {
+        float: none !important;
+        margin: 10px;
+        text-align: center
+    }
+
+    .contact form,
+    .subscribe form {
+        width: 100%
+    }
+
+    .contact form > div,
+    .subscribe form {
+        grid-template-columns: repeat(auto-fit, mimax(200px, 1fr))
+    }
+
+    .contact form input {
+        margin-bottom: 10px
+    }
+
+     p {
+        font-size: 15px
+    }
+
+
+
+    .subscribe form input:last-of-type {
+        margin-top: 20px;
+        margin-right: 20px
+    }
+
+
+    .testim .fa-chevron-right{right: 0}
+    .testim .fa-chevron-left{left: 0}
+
+}
+
+@media(min-width:768px) {
+
+    .container {
+        width: 750px
+    }
+
+
+}
+
+
+@media(min-width:992px) {
+
+    .container {
+        width: 970px
+    }
+
+    .our-work .items-box {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+
+}
+
+@media(min-width:1200px) {
+
+    .container {
+        width: 1170px
+    }
+
+
+}

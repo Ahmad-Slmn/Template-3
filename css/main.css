@@ -415,7 +415,8 @@ html {
     border-radius: 50%;
     border: 2px solid #fff;
     padding: 3px;
-    max-width: 150px
+    max-width: 150px;
+    max-height: 130px !important
 }
 
 .testim .client p{margin: 10px 0; line-height: 1.5; font-size: 15px; width:85%; margin: auto}

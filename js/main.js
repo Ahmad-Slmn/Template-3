@@ -94,9 +94,7 @@ $(function () {
 
         e.preventDefault();
         
-        $("nav").toggleClass("hidemenu")
-
-        $(".nav_bar").toggleClass("hidemenu");
+        $("nav").removeClass("hidemenu")
 
         document.querySelector($(this).data("section")).scrollIntoView({
 

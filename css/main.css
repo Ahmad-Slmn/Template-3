@@ -418,7 +418,7 @@ html {
     max-width: 150px
 }
 
-.testim .client p{margin: 10px 0; line-height: 1.5; font-size: 15px}
+.testim .client p{margin: 10px 0; line-height: 1.5; font-size: 15px; width:85%; margin: auto}
 
 .testim .fa-chevron-right,
 .testim .fa-chevron-left {

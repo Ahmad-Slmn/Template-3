@@ -21,7 +21,9 @@ body {
     position: relative;
 }
 
-img{object-fit: cover}
+img {
+    object-fit: cover
+}
 
 .table {
     height: 100%;
@@ -344,7 +346,7 @@ html {
 
 .our-work .items-box .item {
     position: relative;
-    overflow:hidden
+    overflow: hidden
 }
 
 .our-work .items-box .item:hover .over {
@@ -360,7 +362,7 @@ html {
     background-color: rgba(247, 96, 14, 0.9);
     color: #fff;
     transition: var(--trans);
-    display: none;
+    display: none
 }
 
 .our-work .items-box .item .over h4 {
@@ -422,7 +424,13 @@ html {
     max-height: 130px !important
 }
 
-.testim .client p{margin: 10px 0; line-height: 1.5; font-size: 15px; width:85%; margin: auto}
+.testim .client p {
+    margin: 10px 0;
+    line-height: 1.5;
+    font-size: 15px;
+    width: 85%;
+    margin: auto
+}
 
 .testim .fa-chevron-right,
 .testim .fa-chevron-left {
@@ -470,7 +478,9 @@ html {
 }
 
 
-.our-team .the-team .person{transition: var(--trans)}
+.our-team .the-team .person {
+    transition: var(--trans)
+}
 
 
 .our-team .the-team .person:hover {
@@ -605,7 +615,10 @@ html {
     background: red;
 }
 
-.contact form .info .form-icons{display: flex; justify-content: flex-end}
+.contact form .info .form-icons {
+    display: flex;
+    justify-content: flex-end
+}
 
 
 .contact form .info .form-icons i {
@@ -709,16 +722,28 @@ html {
     .contact form .info input[type="submit"] {
         width: 100%
     }
-    
-    .contact form .info .form-icons{justify-content: center}
+
+    .contact form .info .form-icons {
+        justify-content: center
+    }
 
     #count {
         margin-top: 10px
     }
-    
-    p{font-size: 10px !important}
-    
-    .our-work .items-box .item .over p{font-size: 20px !important; line-height: 1.7}
+
+    p {
+        font-size: 10px !important
+    }
+
+    .our-work .items-box .item .over p {
+        font-size: 15px !important;
+        line-height: 2 !important;
+        margin-bottom: 70px !important
+    }
+
+    .our-work .items-box .item .over h4 {
+        margin-bottom: 30px !important
+    }
 
 }
 
@@ -817,7 +842,7 @@ html {
         margin-bottom: 10px
     }
 
-     p {
+    p {
         font-size: 15px
     }
 
@@ -829,9 +854,24 @@ html {
     }
 
 
-    .testim .fa-chevron-right{right: 0}
-    .testim .fa-chevron-left{left: 0}
+    .testim .fa-chevron-right {
+        right: 0
+    }
 
+    .testim .fa-chevron-left {
+        left: 0
+    }
+
+    .our-work .items-box .item .over h4 {
+        margin-bottom: 0;
+        font-size: 15px
+    }
+
+    .our-work .items-box .item .over p {
+
+        margin-top: 0;
+        line-height: 1.5
+    }
 }
 
 @media(min-width:768px) {
@@ -841,6 +881,21 @@ html {
     }
 
 
+    .our-work .items-box .item .over h4 {
+        margin-bottom: 0;
+        line-height: 1.5;
+        font-size: 15px
+    }
+
+    .our-work .items-box .item .over p {
+        margin: 0;
+        line-height: 1.5
+    }
+
+    .our-work .items-box .item .over button {
+        bottom: -19px
+    }
+
 }
 
 
@@ -848,6 +903,18 @@ html {
 
     .container {
         width: 970px
+    }
+
+    .our-work .items-box .item .over h4 {
+        font-size: 20px;
+        margin-bottom: 0;
+        line-height: 1.7
+    }
+
+    .our-work .items-box .item .over p {
+        margin-top: 0;
+        margin-bottom: 30px;
+        line-height: 2
     }
 
     .our-work .items-box {
@@ -863,5 +930,17 @@ html {
         width: 1170px
     }
 
+
+    .our-work .items-box .item .over h4 {
+        margin-bottom: 30px
+    }
+
+    .our-work .items-box .item .over p {
+        margin-bottom: 50px
+    }
+
+    .our-work .items-box .item .over button {
+        bottom: 0
+    }
 
 }

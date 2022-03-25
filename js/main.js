@@ -1,5 +1,4 @@
 //Change Header Height
-
 $('.header').height($(window).height());
 
 // Count My Textarea Lengths
@@ -80,7 +79,6 @@ $('.testim i').click(function () {
 
 });
 
-
 $(function () {
 
     // Show Or Hide Menue
@@ -93,7 +91,7 @@ $(function () {
     $("nav ul li a, .buttons a").click(function (e) {
 
         e.preventDefault();
-        
+
         $("nav").removeClass("hidemenu")
 
         document.querySelector($(this).data("section")).scrollIntoView({
